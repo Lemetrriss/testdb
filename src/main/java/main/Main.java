@@ -45,7 +45,6 @@ public class Main {
     }
 
     private void createTable(Connection con) throws SQLException {
-        String str = "create table student";
         Statement stm = con.createStatement();
         stm.executeUpdate("CREATE TABLE student (id int NOT NULL PRIMARY KEY auto_increment, name varchar(30), lastName VARCHAR(50), age int)");
         stm.close();

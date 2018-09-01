@@ -14,7 +14,7 @@ public class Main2 {
         properties.setProperty("password","123");
 
         try {
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", properties);
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "Lemetriss", "123");
             createTable(con);
             Student student = new Student("Dmitrij", "Dmitrenko", 35);
             fillTable(con, student);
